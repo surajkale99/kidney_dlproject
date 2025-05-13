@@ -6,7 +6,7 @@ from src.cnnClassifier.config.configuration import ConfigurationManager
 from src.cnnClassifier.components.model_eval_04 import Evaluation
 from src.cnnClassifier import logger
 import os
-import mlflow
+#import mlflow
 
 
 STAGE_NAME = "Evaluation stage"
@@ -22,13 +22,13 @@ class EvaluationPipeline:
         evaluation = Evaluation(eval_config)
         evaluation.evaluation()
         evaluation.save_score()
-        os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/surajkale99/kidney_dlproject.mlflow"
-        os.environ["MLFLOW_TRACKING_USERNAME"]="surajkale99"
-        os.environ["MLFLOW_TRACKING_PASSWORD"]="e4f2406488322cebc687e5c389841eb67f8beeec"
+        # os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/surajkale99/kidney_dlproject.mlflow"
+        # os.environ["MLFLOW_TRACKING_USERNAME"]="surajkale99"
+        # os.environ["MLFLOW_TRACKING_PASSWORD"]="e4f2406488322cebc687e5c389841eb67f8beeec"
 
-        # # Set MLflow tracking URI
-        mlflow.set_tracking_uri("https://dagshub.com/surajkale99/kidney_dlproject.mlflow")
-        evaluation.log_into_mlflow()
+        # # # Set MLflow tracking URI
+        # mlflow.set_tracking_uri("https://dagshub.com/surajkale99/kidney_dlproject.mlflow")
+        # evaluation.log_into_mlflow()
 
 
 
