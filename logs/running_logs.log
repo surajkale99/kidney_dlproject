@@ -442,3 +442,17 @@ x==========x]
 [2025-05-13 17:53:18,371: INFO: _internal:  * Restarting with stat]
 [2025-05-13 17:53:47,335: WARNING: _internal:  * Debugger is active!]
 [2025-05-13 17:53:47,354: INFO: _internal:  * Debugger PIN: 100-211-705]
+[2025-05-14 16:46:19,314: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.20.111:8080]
+[2025-05-14 16:46:19,316: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-05-14 16:46:19,323: INFO: _internal:  * Restarting with stat]
+[2025-05-14 16:46:35,763: WARNING: _internal:  * Debugger is active!]
+[2025-05-14 16:46:35,777: INFO: _internal:  * Debugger PIN: 100-211-705]
+[2025-05-14 16:46:43,397: INFO: _internal: 127.0.0.1 - - [14/May/2025 16:46:43] "GET / HTTP/1.1" 200 -]
+[2025-05-14 16:46:43,475: INFO: _internal: 127.0.0.1 - - [14/May/2025 16:46:43] "GET / HTTP/1.1" 200 -]
+[2025-05-14 16:47:12,846: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-14 16:47:15,056: INFO: _internal: 127.0.0.1 - - [14/May/2025 16:47:15] "POST /predict HTTP/1.1" 200 -]
+[2025-05-14 16:47:30,863: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-14 16:47:32,520: INFO: _internal: 127.0.0.1 - - [14/May/2025 16:47:32] "POST /predict HTTP/1.1" 200 -]
